@@ -1,5 +1,5 @@
 import React from 'react';
-import { Palette, Heart } from 'lucide-react';
+import { Palette } from 'lucide-react';
 import { personalInfo } from '../data/portfolioData';
 
 export default function Footer() {
@@ -17,13 +17,6 @@ export default function Footer() {
           <p className="text-xs text-slate-450">
             &copy; {currentYear} {personalInfo.name}. All rights reserved.
           </p>
-        </div>
-
-        {/* Right Side: Love Credit */}
-        <div className="flex items-center gap-1 text-xs text-slate-450">
-          <span>Crafted with</span>
-          <Heart className="w-3.5 h-3.5 text-pink-500 fill-pink-500" />
-          <span>using React &amp; Tailwind</span>
         </div>
 
       </div>

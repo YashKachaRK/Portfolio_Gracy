@@ -9,7 +9,7 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import CaseStudyModal from './components/CaseStudyModal';
 import UIUXProjects from './components/UIUXProjects';
-import GraphicDesign from './components/GraphicDesign';
+
 import Resume from './components/Resume';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -69,8 +69,6 @@ export default function App() {
         {/* UI/UX Digital Figma Projects */}
         <UIUXProjects />
 
-        {/* Graphic Design items sorted by software tools */}
-        <GraphicDesign />
 
         {/* Education, Experience and Credentials */}
         <Resume />

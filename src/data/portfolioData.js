@@ -8,10 +8,11 @@ export const personalInfo = {
   completedProjects: 24,
   happyClients: 15,
   avatar: "/profile_avatar.png",
+  location: "Rajkot, India",
   socials: {
-    email: "gracy.pandya.design@gmail.com",
-    phone: "+91 98765 43210",
-    linkedin: "https://linkedin.com/in/gracy-pandya",
+    email: "pandyagracy9@gmail.com",
+    phone: "+91 70164 30558",
+    linkedin: "https://www.linkedin.com/in/gracy-pandya-420431388/",
     behance: "https://www.behance.net/gracypandya",
     dribbble: "https://dribbble.com/gracypandya",
     github: "https://github.com/gracypandya"
@@ -141,30 +142,8 @@ export const featuredProjects = [
       overview: "Travel Journal is a custom-designed digital layout built in Canva. Designed for modern adventurers who want to document their journeys, this journal contains pages for itineraries, detailed daily logging, and visual scrapbook photo collages. The aesthetic is clean, warm, and highly customizable.",
       problem: "Standard travel scrapbooks require heavy physical tools or complex, non-user-friendly digital platforms. Traditional layouts also suffer from lack of flexibility when trying to arrange photos with mixed orientations.",
       goal: "Develop an elegant, reusable travel journal template in Canva. The template features a consistent typography scale, a warm natural color palette, and structured grids that make it simple to drop in personal photos and write logs.",
-      moodboard: [
-        "Keywords: Wanderlust, Polaroid, Scrapbook, Earthy tones.",
-        "Textures: Unbleached paper, handwritten typography notes.",
-        "Vibe: Golden hours, mountain hikes, coastal roads."
-      ],
-      colorPalette: [
-        { name: "Sunset Sand", hex: "#EAD7C3", description: "Neutral backdrop reminiscent of beach shores" },
-        { name: "Olive Leaf", hex: "#7E8F7C", description: "Soft natural green reflecting forests and valleys" },
-        { name: "Warm Terracotta", hex: "#C87A53", description: "Earthy clay tone adding color-blocked warmth" },
-        { name: "Charcoal Ink", hex: "#2B2D2F", description: "Dark ink color for clean, legible typography" }
-      ],
-      logo: "Minimalist travel stamp badges and handwritten custom lettering that feels personal and adventurous.",
-      typography: {
-        primary: "Playfair Display - Elegant serif for page titles and locations.",
-        secondary: "Inter - Clean, highly legible sans-serif for diary logs and itineraries."
-      },
-      packaging: "Custom digital layouts exported in print-ready A5 sizes with appropriate margin safety zones.",
-      mockups: [
-        "A5 hardcover journal printed layout mockups.",
-        "Digital travel template viewport in tablet devices.",
-        "Travel collage page with textured polaroid overlays."
-      ],
-      socialMedia: "Cohesive Instagram story layouts and Pinterest pins for sharing travel memories with followers.",
-      finalBranding: "The finished Canva layouts successfully combine retro scrapbook nostalgia with clean modern interface grids, offering travelers a beautiful medium for their stories."
+      brandApplicationsLabel: "Journal Designs",
+      brandApplications: "A selection of curated journaling templates, scrapbook layouts, and travel itineraries."
     }
   },
   {
@@ -208,17 +187,6 @@ export const featuredProjects = [
         "Customer: Demands a visual order flow, transparent pricing, custom options selection, and real-time delivery tracking status.",
         "Delivery Agent: Needs a lightweight, mobile-first view of active pickups, route directions, and historical earnings records."
       ],
-      colorsLabel: "UI Tokens & Colors",
-      colorPalette: [
-        { name: "Cream Frosting", hex: "#FFFDF9", description: "Clean, light canvas color for main dashboard screens" },
-        { name: "Melted Chocolate", hex: "#3D2E2B", description: "Deep brown tone for primary headings and side nav borders" },
-        { name: "Berry Velvet", hex: "#EC4899", description: "Vibrant pink accent representing sweet toppings and interactive actions" },
-        { name: "Matcha Mint", hex: "#10B981", description: "Alert/Success status for completed orders and active inventory stock" }
-      ],
-      typography: {
-        primary: "Space Grotesk - Used for modern dashboard statistics and widget headers.",
-        secondary: "Inter - Standard body text optimized for long lists, numeric POS entries, and receipt layout."
-      },
       mockupsLabel: "Admin Experience",
       mockups: [
         "Centralized sales and revenue performance dashboard panels.",
@@ -297,12 +265,6 @@ export const uiuxProjects = {
       image: "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?auto=format&fit=crop&w=800&q=80",
       description: "Low and mid-fidelity blueprints outlining navigation structures, layout architectures, and logical pathways before skinning with visuals.",
       highlights: ["Checkout Experience Map", "Onboarding Flow Optimization", "Information Architecture Trees"]
-    },
-    {
-      title: "Prototype Screens & Systems",
-      image: "https://images.unsplash.com/photo-1561070791-26c113006238?auto=format&fit=crop&w=800&q=80",
-      description: "Comprehensive Figma components including variants, auto-layout assemblies, responsive typography structures, and style tokens.",
-      highlights: ["Atomic Design Systems", "Interactive Prototyping", "Design Token Libraries"]
     }
   ]
 };

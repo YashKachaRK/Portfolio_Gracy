@@ -1,5 +1,5 @@
 import React from 'react';
-import { FileText, GraduationCap, Award, Download } from 'lucide-react';
+import { FileText, GraduationCap, Download } from 'lucide-react';
 import { resume } from '../data/portfolioData';
 
 export default function Resume() {
@@ -18,7 +18,7 @@ export default function Resume() {
         <div className="flex flex-col items-start mb-16 text-left">
           <div className="flex items-center gap-2 text-violet-400 font-semibold text-sm uppercase tracking-wider mb-2">
             <FileText className="w-4 h-4" />
-            <span>06 . Qualifications &amp; History</span>
+            <span>05 . Qualifications &amp; History</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white">
             My Professional Story
@@ -29,7 +29,7 @@ export default function Resume() {
         {/* Timeline Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 text-left">
           {/* Education Column */}
-          <div className="lg:col-span-7 space-y-8">
+          <div className="lg:col-span-12 space-y-8">
             <h3 className="text-xl font-bold text-white flex items-center gap-2.5 px-2">
               <GraduationCap className="w-5 h-5 text-cyan-450" /> Education
             </h3>
@@ -45,25 +45,6 @@ export default function Resume() {
                     <span className="text-sm font-semibold text-slate-350">{edu.institution}</span>
                     <p className="text-xs text-slate-400 leading-relaxed mt-3">{edu.description}</p>
                   </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Certifications Column */}
-          <div className="lg:col-span-5 space-y-8">
-            <h3 className="text-xl font-bold text-white flex items-center gap-2.5 px-2">
-              <Award className="w-5 h-5 text-pink-400" /> Certifications &amp; Badges
-            </h3>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {resume.certifications.map((cert, idx) => (
-                <div key={idx} className="glassmorphism p-5 rounded-2xl border border-white/5 flex flex-col justify-between hover:bg-white/5 transition-all">
-                  <div>
-                    <h4 className="text-xs font-bold text-white leading-snug">{cert.name}</h4>
-                    <span className="text-[10px] text-slate-400 block mt-1">{cert.issuer}</span>
-                  </div>
-                  <span className="text-[10px] font-bold text-violet-400 mt-3 block">{cert.year}</span>
                 </div>
               ))}
             </div>

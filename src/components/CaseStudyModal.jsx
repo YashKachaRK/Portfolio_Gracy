@@ -94,14 +94,13 @@ export default function CaseStudyModal({ projectId, onClose }) {
       switch (sectionId) {
         case 'overview':
           return ['/image/Travel Memory/1.png'];
-        case 'moodboard':
-          return ['/image/Travel Memory/2.png'];
-        case 'colors':
-          return ['/image/Travel Memory/3.png'];
-        case 'packaging':
-          return ['/image/Travel Memory/4.png'];
-        case 'mockups':
-          return ['/image/Travel Memory/4.png'];
+        case 'applications':
+          return [
+            '/image/Travel Memory/1.png',
+            '/image/Travel Memory/2.png',
+            '/image/Travel Memory/3.png',
+            '/image/Travel Memory/4.png'
+          ];
         default:
           return [];
       }
