@@ -42,16 +42,11 @@ export default function About() {
               <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
                 <Compass className="w-5 h-5 text-violet-400" /> Who I Am &amp; My Journey
               </h3>
-              <p className="leading-relaxed mb-4 text-slate-300">
+              <p className="leading-relaxed text-slate-300">
                 Hi, I'm Gracy. My design journey began with a curiosity for how art influences decisions. 
                 I started by designing logos and visual branding, which quickly evolved into a passion 
                 for user experience. I love taking complex, messy problems and distilling them into clean, 
                 functional digital interfaces.
-              </p>
-              <p className="leading-relaxed text-slate-300">
-                During my design education at NID, I spent hours studying typography, layout grids, 
-                and packaging guidelines. I believe a good designer doesn't just make things look pretty; 
-                they make systems that feel effortless.
               </p>
             </div>
 

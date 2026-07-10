@@ -3,7 +3,7 @@
 export const personalInfo = {
   name: "Gracy Pandya",
   title: "UI/UX & Graphic Designer",
-  bio: "I am a visual storyteller and detail-oriented UI/UX designer. I bridge the gap between creative graphic design and user-centered digital interfaces. My goal is to create products that are not only aesthetically breathtaking but also seamless, intuitive, and accessible for everyone.",
+  bio: "I am a passionate and detail-oriented UI/UX Designer with a strong interest in creating intuitive, user-friendly, and visually appealing digital experiences. As a fresher, I enjoy combining creativity with problem-solving to design interfaces that are both functional and accessible. I am eager to learn, grow, and contribute to meaningful projects that improve user experiences.",
   experienceYears: 2,
   completedProjects: 24,
   happyClients: 15,
@@ -39,7 +39,7 @@ export const featuredProjects = [
     title: "☕ Sippe Coffee Branding",
     subtitle: "A modern visual identity and packaging system for an artisanal, slow-drip coffee roastery.",
     tagline: "Eco-friendly materials meet bold visual storytelling.",
-    coverImage: "/sippe_coffee_branding.png",
+    coverImage: "/image/Sippe_page-0001.jpg",
     category: "Branding & Packaging",
     tags: ["Branding", "Packaging", "Mockups", "Logo Design"],
     caseStudy: {
@@ -74,15 +74,10 @@ export const featuredProjects = [
         "Vibe: Cosy morning sunlight, clean grids, warm steam waves."
       ],
       logo: "The Sippe logo combines a stylized coffee drip and an open coffee mug, nested inside a bold, hand-customized serif wordmark. It communicates dripping patience and hospitality.",
-      colorPalette: [
-        { name: "Espresso Dark", hex: "#2C1B18", description: "Primary dark background, grounding the brand" },
-        { name: "Warm Latte", hex: "#D9C3B0", description: "Secondary cream neutral for soft contrast" },
-        { name: "Drip Orange", hex: "#E05A36", description: "Accent color symbolizing heat, energy, and roasting" },
-        { name: "Forest Herb", hex: "#3E503C", description: "Muted green representing eco-conscious roots" }
-      ],
+      colorPalette: [],
       typography: {
-        primary: "Space Grotesk - Used for modern, clean headlines.",
-        secondary: "Inter - Clean sans-serif used for legibility in body copy and package descriptions."
+        primary: "Cinzel - Used for modern, clean headlines.",
+        secondary: "Bell MT - Clean serif used for legibility in body copy and package descriptions."
       },
       packaging: "Created customized, eco-friendly coffee bags using compostable PLA lining and unbleached kraft paper. Features a bold color-blocked sticker label that identifies the roast level, origin, and flavor notes.",
       menu: "Designed a clean, grid-based physical and digital menu board. Utilizes structured typography with high readability under warm cafe lighting.",
@@ -178,10 +173,10 @@ export const featuredProjects = [
     }
   },
   {
-    id: "bakeease-pos",
-    title: "🧁 BakeEase - Multi-Role POS & Order Dashboards",
+    id: "icecream-inventory",
+    title: "🍦 Ice Cream Inventory Management",
     subtitle: "A comprehensive enterprise-grade UI/UX case study featuring unified dashboards for customers, staff, delivery agents, and administrators.",
-    tagline: "Bridging the gap between real-time bakery operations and seamless user experiences.",
+    tagline: "Bridging the gap between real-time ice cream parlor operations and seamless user experiences.",
     coverImage: "/image/figma-export-2026-07-08T17-18-21/admin-dashboard.png",
     category: "UI/UX & System Design",
     tags: ["Figma", "UI/UX", "Dashboard", "Multi-Role POS", "System Design"],
@@ -208,8 +203,8 @@ export const featuredProjects = [
         "/image/figma-export-2026-07-08T17-18-21/delivery-dashboard.png",
         "/image/figma-export-2026-07-08T17-18-21/delivery-previousorder.png"
       ],
-      overview: "BakeEase is an all-in-one ordering, POS, and inventory management ecosystem designed specifically for modern bakeries and confectionery shops. The system integrates four main interfaces: a customer-facing portal, a cashier-facing point-of-sale invoice creator, a delivery dispatch tracker, and a comprehensive admin back-office dashboard. It streamlines operations from ordering to baking, payment, and delivery.",
-      problem: "Traditional bakery management relies on fragmented tools (a separate POS, manually coordinated delivery agents, physical order books, and isolated customer channels). This fragmentation creates bottlenecks: miscommunicated cake customization requests, delayed kitchen dispatches, inventory mismatches, and lack of real-time order tracking for customers.",
+      overview: "Ice Cream Inventory Management is an all-in-one ordering, POS, and inventory management ecosystem designed specifically for modern ice cream shops and parlors. The system integrates four main interfaces: a customer-facing portal, a cashier-facing point-of-sale invoice creator, a delivery dispatch tracker, and a comprehensive admin back-office dashboard. It streamlines operations from ordering to scooping, payment, and delivery.",
+      problem: "Traditional ice cream parlor management relies on fragmented tools (a separate POS, manually coordinated delivery agents, physical order books, and isolated customer channels). This fragmentation creates bottlenecks: miscommunicated customization requests, delayed dispatches, inventory mismatches, and lack of real-time order tracking for customers.",
       goal: "Design a unified, multi-role digital ecosystem that coordinates everyone (customers, cashiers, kitchen staff, delivery partners, and store owners) under one cohesive, real-time interface, minimizing processing errors and optimizing wait times.",
       researchLabel: "User Roles & Requirements",
       research: [
@@ -222,7 +217,7 @@ export const featuredProjects = [
       colorPalette: [
         { name: "Cream Frosting", hex: "#FFFDF9", description: "Clean, light canvas color for main dashboard screens" },
         { name: "Melted Chocolate", hex: "#3D2E2B", description: "Deep brown tone for primary headings and side nav borders" },
-        { name: "Berry Velvet", hex: "#EC4899", description: "Vibrant pink accent representing sweet frostings and interactive actions" },
+        { name: "Berry Velvet", hex: "#EC4899", description: "Vibrant pink accent representing sweet toppings and interactive actions" },
         { name: "Matcha Mint", hex: "#10B981", description: "Alert/Success status for completed orders and active inventory stock" }
       ],
       typography: {
@@ -238,9 +233,9 @@ export const featuredProjects = [
       socialMediaLabel: "Cashier POS Experience",
       socialMedia: "The POS billing interface is designed to be low-friction for cashiers under pressure. It provides a visual product grid, quick-add modifier tabs, and instantaneous receipt generation with automatic inventory deductions.",
       brandApplicationsLabel: "Customer & Delivery Experience",
-      brandApplications: "The customer app is built to showcase confectionery items with high-fidelity imagery, options customization (flavors, messages), and a visual step-by-step progress tracker. The delivery view streamlines active orders with a quick 'Accept/Complete' flow.",
+      brandApplications: "The customer app is built to showcase ice cream items with high-fidelity imagery, options customization (flavors, toppings), and a visual step-by-step progress tracker. The delivery view streamlines active orders with a quick 'Accept/Complete' flow.",
       finalLabel: "Operational Impact",
-      finalBranding: "By bringing Admin, Cashier, Customer, and Delivery environments under a singular design system, BakeEase establishes a robust operational flow. Visual status indicators reduce order coordination time by 35% and inventory mismatches by 50% compared to legacy systems.",
+      finalBranding: "By bringing Admin, Cashier, Customer, and Delivery environments under a singular design system, Ice Cream Inventory Management establishes a robust operational flow. Visual status indicators reduce order coordination time by 35% and inventory mismatches by 50% compared to legacy systems.",
       sectionImages: {
         overview: [
           "/image/figma-export-2026-07-08T17-18-21/admin-dashboard.png",

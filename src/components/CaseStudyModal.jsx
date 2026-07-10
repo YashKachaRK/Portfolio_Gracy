@@ -6,6 +6,14 @@ import {
 } from 'lucide-react';
 import { featuredProjects } from '../data/portfolioData';
 
+const getFontFamilyAndFallback = (fontStr) => {
+  if (!fontStr) return 'inherit';
+  const name = fontStr.split('-')[0].trim();
+  const sansSerifs = ['Inter', 'Space Grotesk', 'Helvetica', 'Arial', 'sans-serif'];
+  const isSans = sansSerifs.some(s => name.toLowerCase().includes(s.toLowerCase()));
+  return `'${name}', ${isSans ? 'sans-serif' : 'serif'}`;
+};
+
 export default function CaseStudyModal({ projectId, onClose }) {
   const [copiedColor, setCopiedColor] = useState(null);
   const [activeSection, setActiveSection] = useState(null);
@@ -227,7 +235,7 @@ export default function CaseStudyModal({ projectId, onClose }) {
     caseStudy.research && { id: 'research', label: caseStudy.researchLabel || 'Research' },
     caseStudy.brandStory && { id: 'brand-story', label: caseStudy.brandStoryLabel || 'Brand Story' },
     caseStudy.designPhilosophy && { id: 'philosophy', label: caseStudy.philosophyLabel || 'Design Philosophy' },
-    caseStudy.moodboard && { id: 'moodboard', label: caseStudy.moodboardLabel || 'Moodboard' },
+    caseStudy.moodboard && { id: 'moodboard', label: caseStudy.moodboardLabel || 'Logo Variation' },
     caseStudy.logo && { id: 'logo', label: caseStudy.logoLabel || 'Logo Design' },
     caseStudy.colorPalette && { id: 'colors', label: caseStudy.colorsLabel || 'Colors & Palette' },
     caseStudy.typography && { id: 'typography', label: caseStudy.typographyLabel || 'Typography' },
@@ -395,7 +403,7 @@ export default function CaseStudyModal({ projectId, onClose }) {
             {caseStudy.moodboard && (
               <section id="cs-moodboard" className="scroll-mt-8 space-y-4">
                 <h2 className="text-2xl font-bold text-white flex items-center gap-2">
-                  <span className="text-violet-400 font-normal text-lg">{getSectionNumberStr('moodboard')}</span> Moodboard Vibe
+                  <span className="text-violet-400 font-normal text-lg">{getSectionNumberStr('moodboard')}</span> Logo Variation
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                   {caseStudy.moodboard.map((item, idx) => (
@@ -458,14 +466,26 @@ export default function CaseStudyModal({ projectId, onClose }) {
                 <h2 className="text-2xl font-bold text-white flex items-center gap-2">
                   <span className="text-violet-400 font-normal text-lg">{getSectionNumberStr('typography')}</span> Typography Systems
                 </h2>
-                <div className="p-6 md:p-8 rounded-2xl bg-white/5 border border-white/5 space-y-4">
+                <div className="p-6 md:p-8 rounded-2xl bg-white/5 border border-white/5 space-y-6">
                   <div>
                     <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Primary Typeface</h4>
                     <p className="text-lg font-bold text-white">{caseStudy.typography.primary}</p>
+                    <p 
+                      className="text-2xl mt-2 tracking-wide font-medium bg-white/5 p-3 rounded-lg border border-white/5" 
+                      style={{ fontFamily: getFontFamilyAndFallback(caseStudy.typography.primary) }}
+                    >
+                      Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz
+                    </p>
                   </div>
                   <div>
                     <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Secondary Typeface</h4>
                     <p className="text-lg font-bold text-white">{caseStudy.typography.secondary}</p>
+                    <p 
+                      className="text-xl mt-2 tracking-wide bg-white/5 p-3 rounded-lg border border-white/5" 
+                      style={{ fontFamily: getFontFamilyAndFallback(caseStudy.typography.secondary) }}
+                    >
+                      Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz
+                    </p>
                   </div>
                 </div>
                 {renderSectionImages('typography')}

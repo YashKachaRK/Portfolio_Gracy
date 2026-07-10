@@ -29,12 +29,6 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10 w-full">
         {/* Text Area */}
         <div className="lg:col-span-7 flex flex-col items-start text-left">
-          {/* Greeting Badge */}
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-violet-500/10 border border-violet-500/20 text-violet-300 text-sm font-semibold mb-6 animate-pulse-slow">
-            <span className="w-2 h-2 rounded-full bg-violet-400" />
-            Available for Freelance & Full-time Roles
-          </div>
-
           {/* Headline */}
           <h1 className="text-5xl md:text-6xl xl:text-7xl font-bold tracking-tight text-white mb-6">
             Hi, I'm{' '}
@@ -50,7 +44,7 @@ export default function Hero() {
 
           {/* Introduction Paragraph */}
           <p className="text-lg text-slate-400 leading-relaxed max-w-2xl mb-10">
-            {personalInfo.bio} Let's transform your ideas into functional art.
+            {personalInfo.bio}
           </p>
 
           {/* Action Buttons */}

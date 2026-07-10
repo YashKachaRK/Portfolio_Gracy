@@ -13,7 +13,7 @@ export default function Projects({ onOpenCaseStudy }) {
     'sippe-coffee': 'from-amber-900/40 via-yellow-950/20 to-[#050816]',
     'nyra-skincare': 'from-rose-950/40 via-orange-950/20 to-[#050816]',
     'travel-journal': 'from-orange-900/40 via-amber-950/20 to-[#050816]',
-    'bakeease-pos': 'from-violet-900/40 via-fuchsia-950/20 to-[#050816]',
+    'icecream-inventory': 'from-violet-900/40 via-fuchsia-950/20 to-[#050816]',
   };
 
   return (
