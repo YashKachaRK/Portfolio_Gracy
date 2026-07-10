@@ -86,8 +86,7 @@ export const featuredProjects = [
         "Reusable takeaway cups with embossed sleeve logos.",
         "Barista uniform apron with embroidered minimalist badge."
       ],
-      socialMedia: "A set of instagram posts and story templates that combine atmospheric cafe photography with clean typographic quotes and roasting facts.",
-      finalBranding: "The final branding system successfully launched across 3 regional outlets, resulting in a 35% increase in visual engagement on Instagram and a highly positive response from retail distributors."
+      socialMedia: "A set of instagram posts and story templates that combine atmospheric cafe photography with clean typographic quotes and roasting facts."
     }
   },
   {
@@ -95,7 +94,7 @@ export const featuredProjects = [
     title: "🌸 NYRA Skincare Branding",
     subtitle: "A clean, minimalist organic cosmetics branding emphasizing purity, radiant skin, and natural beauty.",
     tagline: "Minimalist aesthetics mirroring organic skin purity.",
-    coverImage: "/nyra_skincare_branding.png",
+    coverImage: "/image/NYARA/NYRA_page-0001.jpg",
     category: "Branding & Web",
     tags: ["Minimalist UI", "Brand Story", "Packaging", "Cosmetics"],
     caseStudy: {
@@ -117,12 +116,8 @@ export const featuredProjects = [
       goal: "Develop a premium branding structure including visual assets, product labeling, and instagram marketing materials that convey dermatological trust and natural wellness.",
       brandStory: "Derived from the word 'Nira' meaning water or pure, NYRA represents the flow of life and hydration. The visual assets tell a story of botanical luxury, using soft colors and airy compositions.",
       logo: "A delicate, high-contrast serif monogram 'N' entwined with a subtle leaf curve. The full wordmark uses generous tracking, invoking a sense of space and premium calm.",
-      colorPalette: [
-        { name: "Petal Peach", hex: "#F3E3DB", description: "Base nude representing skin tones and softness" },
-        { name: "Sage Extract", hex: "#A8BBA2", description: "Soothing natural tone representing botanical extracts" },
-        { name: "Rich Clay", hex: "#5C463F", description: "Deep brown accent for grounding text and borders" },
-        { name: "Glow White", hex: "#FCFCFC", description: "Clean base highlighting product purity" }
-      ],
+      colorPalette: [],
+      visitingCard: "Minimalist business and visiting card layout utilizing soft natural tones and structural typography to showcase brand contacts with elegance.",
       packaging: "Frosted glass bottles with textured paper labels. Standardized color codes help customers instantly distinguish between Cleansers, Serums, and Moisturizers.",
       labels: "Ultra-clean typographical layout. Front label contains only brand name, product name, and main active botanical. Back label contains organic certifications, usage guides, and full ingredient list.",
       socialMedia: "Grid templates for Pinterest and Instagram with a high focus on clean product shots, aesthetic flatlays, and ingredient spotlights (e.g., Green Tea, Hyaluronic Acid)."

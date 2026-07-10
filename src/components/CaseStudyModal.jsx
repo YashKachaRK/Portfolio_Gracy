@@ -44,9 +44,9 @@ export default function CaseStudyModal({ projectId, onClose }) {
         case 'typography':
           return ['/image/Sippe_page-0006.jpg'];
         case 'packaging':
-          return ['/image/Sippe_page-0007.jpg', '/image/Sippe_page-0015.jpg'];
+          return ['/image/Sippe_page-0015.jpg'];
         case 'menu':
-          return ['/image/Sippe_page-0008.jpg'];
+          return ['/image/Sippe_page-0007.jpg', '/image/Sippe_page-0008.jpg'];
         case 'mockups':
           return [
             '/image/Sippe_page-0012.jpg',
@@ -74,11 +74,13 @@ export default function CaseStudyModal({ projectId, onClose }) {
         case 'logo':
           return ['/image/NYARA/NYRA_page-0003.jpg', '/image/NYARA/NYRA_page-0004.jpg'];
         case 'colors':
-          return ['/image/NYARA/NYRA_page-0005.jpg', '/image/NYARA/NYRA_page-0008.jpg'];
+          return ['/image/NYARA/NYRA_page-0005.jpg'];
         case 'typography':
           return ['/image/NYARA/NYRA_page-0006.jpg'];
-        case 'packaging':
+        case 'visiting-card':
           return ['/image/NYARA/NYRA_page-0007.jpg'];
+        case 'packaging':
+          return ['/image/NYARA/NYRA_page-0008.jpg'];
         case 'labels':
           return ['/image/NYARA/NYRA_page-0008.jpg'];
         case 'social-media':
@@ -176,6 +178,7 @@ export default function CaseStudyModal({ projectId, onClose }) {
     caseStudy.logo && 'logo',
     caseStudy.colorPalette && 'colors',
     caseStudy.typography && 'typography',
+    caseStudy.visitingCard && 'visiting-card',
     caseStudy.packaging && 'packaging',
     caseStudy.labels && 'labels',
     caseStudy.menu && 'menu',
@@ -239,6 +242,7 @@ export default function CaseStudyModal({ projectId, onClose }) {
     caseStudy.logo && { id: 'logo', label: caseStudy.logoLabel || 'Logo Design' },
     caseStudy.colorPalette && { id: 'colors', label: caseStudy.colorsLabel || 'Colors & Palette' },
     caseStudy.typography && { id: 'typography', label: caseStudy.typographyLabel || 'Typography' },
+    caseStudy.visitingCard && { id: 'visiting-card', label: caseStudy.visitingCardLabel || 'Visiting Card' },
     caseStudy.packaging && { id: 'packaging', label: caseStudy.packagingLabel || 'Packaging' },
     caseStudy.labels && { id: 'labels', label: caseStudy.labelsLabel || 'Labels & Details' },
     caseStudy.menu && { id: 'menu', label: caseStudy.menuLabel || 'Menu & Print' },
@@ -489,6 +493,19 @@ export default function CaseStudyModal({ projectId, onClose }) {
                   </div>
                 </div>
                 {renderSectionImages('typography')}
+              </section>
+            )}
+
+            {/* Visiting Card */}
+            {caseStudy.visitingCard && (
+              <section id="cs-visiting-card" className="scroll-mt-8 space-y-4">
+                <h2 className="text-2xl font-bold text-white flex items-center gap-2">
+                  <span className="text-violet-400 font-normal text-lg">{getSectionNumberStr('visiting-card')}</span> Visiting Card
+                </h2>
+                <div className="p-6 md:p-8 rounded-2xl bg-white/5 border border-white/5 text-slate-300 leading-relaxed text-sm">
+                  {caseStudy.visitingCard}
+                </div>
+                {renderSectionImages('visiting-card')}
               </section>
             )}
 
